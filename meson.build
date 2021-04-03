@@ -1,8 +1,8 @@
 project(
   'vstsdk',
   'cpp',
-  version : '3.7.1',
-  default_options : ['cpp_std=c++11'],
+  version : '3.7.2',
+  default_options : ['cpp_std=c++17'],
 )
 
 # This meson.build file is intended as a minimal replacement for the CMake
@@ -73,6 +73,7 @@ sdk_common_sources = files([
 ])
 sdk_sources = files([
   'public.sdk/source/common/pluginview.cpp',
+  'public.sdk/source/main/moduleinit.cpp',
   'public.sdk/source/main/pluginfactory.cpp',
   'public.sdk/source/vst/utility/stringconvert.cpp',
   'public.sdk/source/vst/utility/vst2persistence.cpp',
